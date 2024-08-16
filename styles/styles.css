@@ -1,0 +1,117 @@
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: column ;
+  background-color: aqua;
+}
+
+.menu-bar {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+}
+
+.menu-bar > * {
+  outline: 2px solid red;
+  padding: 10px;
+  text-align: center;
+}
+
+.dropdown {
+  flex-grow: 1;
+}
+
+.dropmenu {
+  margin: 10px;
+}
+
+.buisness-name {
+  font-size: large;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 3;
+}
+
+.about {
+  flex-grow: 1;
+}
+
+#display-information {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  background-color: rgb(185, 235, 255);
+  height: 60vh;
+  width: 100vw;
+}
+#display-information > * {
+  outline: 3px solid red;
+
+}
+
+.display-information-paragraph {
+  padding: 10vw;
+  font-size: medium;
+}
+
+.option-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 30vh;
+  outline: 5px dotted black;
+}
+
+.option-information > * {
+  display: flex;
+  outline: 3px dashed red;
+  background-color: white;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.irrigation-icon {
+ background-color: rgb(77, 77, 166); 
+ color: white;
+}
+
+.irrigation-icon > *{
+  
+ outline: 3px dashed blue;
+  
+}
+
+.landscape-icon {
+  background-color: rgb(43, 98, 43);
+  color: white;
+}
+
+
+.drop-cont {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.drop-cont a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+}
+
+.drop-cont a:hover {background-color: aquamarine;}
+
+.dropdown:hover .drop-cont {display: block;}
