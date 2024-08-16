@@ -2,43 +2,43 @@
 @font-face {
   font-family: "chunk-five-print";
   src:
-    url("fonts/font/chunk_five_print-webfont.woff") format("woff"),
-    url("fonts/font/chunk_five_print-webfont.woff2") format("woff2");
+    url("../fonts/font/chunk_five_print-webfont.woff2") format("woff2"),
+    url("../fonts/font/chunk_five_print-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "chunk-five-regular";
   src:
-    url("fonts/font/chunkfive-regular-webfont.woff2") format("woff2"),
-    url("fonts/font/chunkfive-regular-webfont.woff") format("woff");
+    url("../fonts/font/chunkfive-regular-webfont.woff2") format("woff2"),
+    url("../fonts/font/chunkfive-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-font-face {
+@font-face {
   font-family: "quicksand-bold-italic";
   src:
-    url("fonts/font/quicksand-bolditalic-webfont.woff2") format("woff2"),
-    url("fonts/font/quicksand-bolditalic-webfont.woff") format("woff");
+    url("../fonts/font/quicksand-bolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/font/quicksand-bolditalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-font-face {
+@font-face {
   font-family: "quicksand-bold";
   src:
-    url("fonts/font/quickand-bold-webfont.woff2") format("woff2"),
-    url("fonts/font/quicksand-bold.woff") format("woff");
+    url("../fonts/font/quickand-bold-webfont.woff2") format("woff2"),
+    url("../fonts/font/quicksand-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-font-face {
+@font-face {
   font-family: "quicksand-light";
   src:
-    url("fonts/font/quicksand-light-webfont.woff2") format("woff2"),
-    url("fonts/font/quicksand-light-webfont.woff") format("woff");
+    url("../fonts/font/quicksand-light-webfont.woff2") format("woff2"),
+    url("../fonts/font/quicksand-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -52,6 +52,7 @@ body {
   align-content: space-around;
   flex-direction: column ;
   background-color: aqua;
+  font-family: "quicksand-light", sans-serif;
 }
 
 .menu-bar {
@@ -78,11 +79,13 @@ body {
 }
 
 .buisness-name {
-  font-size: large;
+  font-family: "quicksand-bold-italic";
+  font-size: 30px;
   justify-content: center;
   align-items: center;
   flex-grow: 3;
 }
+
 .logobox {
   display: flex;
   flex-grow: 1;
