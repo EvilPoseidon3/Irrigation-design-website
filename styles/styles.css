@@ -51,7 +51,7 @@ body {
   align-items: center;
   align-content: space-around;
   flex-direction: column ;
-  background-color: aqua;
+  background-color: rgb(185, 235, 255);
   font-family: "quicksand-light", sans-serif;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .menu-bar > * {
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   padding: 10px;
   text-align: center;
 }
@@ -76,6 +76,8 @@ body {
 
 .dropmenu {
   margin: 10px;
+  text-decoration: underline;
+  letter-spacing: .5ch;
 }
 
 .buisness-name {
@@ -84,6 +86,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-grow: 3;
+  flex-shrink: 2;
 }
 
 .logobox {
@@ -99,22 +102,62 @@ body {
   padding-left: 40px;
 }
 
-#display-information {
+.toparea {
   display: flex;
-  align-items: left;
+  flex-direction: column;
+}
+
+.display-information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   background-color: rgb(185, 235, 255);
   height: 60vh;
   width: 100vw;
+ 
 }
-#display-information > * {
-  outline: 3px solid red;
+.display-information > * {
+  /* outline: 3px solid red; */
+  margin: 0 min(100px, 10vw);
+}
 
+.display-information > div {
+  font-family: "quicksand-bold";
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 15vw;
+}
+
+.display-information-paragraph > button {
+  font-family: "chunk-five-print";
+  font-size: 20px;
+  font-style: italic;
+  background-color:rgb(126, 218, 255) ;
+  border: none;
+  size: auto;
+  padding: 20px 20px;
+  width: 20ch;
+  border-radius: 20px;
+}
+
+.display-information > img {
+  height: min(400px, 100%);
+  width: auto;
+  rotate: 3deg;
+  margin-right: 15vw;
+  border-radius: 20px;
+}
+
+.display-information-paragraph > h3 {
+  width: 20vw;
 }
 
 .display-information-paragraph {
-  padding: 10vw;
-  font-size: medium;
+  padding: 0 10vw;
+  flex: 1 1;
 }
 
 .option-information {
@@ -184,3 +227,19 @@ body {
 .drop-cont a:hover {background-color: rgb(87, 250, 196); border-radius: 20px;}
 
 .dropdown:hover .drop-cont {display: block;}
+
+.img:hover{
+  color: #424242; 
+  position: static;
+  rotate: 0deg;
+-webkit-transition: all .9s ease-in;
+-moz-transition: all .9s ease-in;
+-ms-transition: all .9s ease-in;
+-o-transition: all .9s ease-in;
+transition: all .9s ease-in;
+opacity: 1;
+transform: scale(1.5);
+-ms-transform: scale(1.5); /* IE 9 */
+-webkit-transform: scale(1.5); /* Safari and Chrome */
+
+}
